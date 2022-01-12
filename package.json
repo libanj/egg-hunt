@@ -1,0 +1,11 @@
+{
+  "name": "easter-popup",
+  "version": "1.0.0",
+  "description": "Easter Pop-up",
+  "main": "indez.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Liban Jama",
+  "license": "ISC"
+}

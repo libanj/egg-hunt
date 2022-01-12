@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="title">Try To Find The Hidden Easter Eggs, Have Fun!</h1>
+    <h1 class="show-message">Screen needs to be 1920x1080</h1>
+  </body>
+  <script defer>
+    const images = [
+      {
+        src: "Asset 15.png",
+        class: "asset-15",
+      },
+      {
+        src: "Asset 16.png",
+        class: "asset-16",
+      },
+      {
+        src: "Asset 17.png",
+        class: "asset-17",
+      },
+      {
+        src: "Asset 18.png",
+        class: "asset-18",
+      },
+      {
+        src: "Asset 19.png",
+        class: "asset-19",
+      },
+      {
+        src: "Asset 20.png",
+        class: "asset-20",
+      },
+      {
+        src: "Asset 21.png",
+        class: "asset-21",
+      },
+      {
+        src: "Asset 22.png",
+        class: "asset-22",
+      },
+      {
+        src: "Asset 23.png",
+        class: "asset-23",
+      },
+      {
+        src: "Asset 24.png",
+        class: "asset-24",
+      },
+      {
+        src: "Asset 25.png",
+        class: "asset-25",
+      },
+      {
+        src: "Asset 26.png",
+        class: "asset-26",
+      },
+    ];
+
+    const imageTags = images.map(
+      (image) =>
+        `<img src="image/${image.src}" class="asset-image ${image.class}" style="position: absolute;">`
+    );
+
+    imageTags.forEach((imageTag) => {
+      document.querySelector("body").insertAdjacentHTML("beforeend", imageTag);
+    });
+
+    document.querySelectorAll(".asset-image").forEach((image) => {
+      image.addEventListener("click", () => {
+        image.classList.add("show-egg");
+      });
+    });
+  </script>
+</html>

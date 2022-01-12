@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  background-image: url("image/Asset\ 27.png");
+  background-repeat: no-repeat, repeat;
+  background-size: cover;
+  /* width: 100vw;
+  height: 100vh; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.title {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -700%);
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.show-message {
+  display: none;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.asset-15 {
+  top: 499px;
+  left: 510px;
+}
+
+.asset-16 {
+  left: 316px;
+  top: 496px;
+}
+
+.asset-17 {
+  left: 992px;
+  top: 184px;
+}
+
+.asset-18 {
+  top: 756px;
+  left: 990px;
+  width: 23px;
+}
+
+.asset-19 {
+  left: 1278px;
+  top: 471px;
+  width: 22px;
+}
+.asset-20 {
+  left: 285px;
+  top: 720px;
+}
+
+.asset-21 {
+  left: 1368px;
+  top: 366px;
+  width: 26px;
+}
+
+.asset-22 {
+  top: 83px;
+  left: 174px;
+}
+
+.asset-23 {
+  left: 240px;
+  top: 328px;
+}
+
+.asset-24 {
+  left: 436px;
+  top: 579px;
+  width: 24px;
+}
+
+.asset-25 {
+  left: 559px;
+  top: 719px;
+  width: 25px;
+}
+
+.asset-26 {
+  top: 574px;
+  left: 760px;
+  width: 23px;
+}
+
+.asset-image {
+  cursor: pointer;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+.asset-image:active {
+  filter: brightness(80%);
+  transform: scale(0.8);
+}
+
+.show-egg {
+  transition: border 0.5s;
+  border: 5px solid black;
+  cursor: initial !important;
+}
+
+@media only screen and (min-width: 1930px) {
+  body {
+    background-image: none !important;
+    background-color: black !important;
+  }
+
+  .show-message {
+    display: block;
+  }
+
+  .asset-image {
+    display: none;
+  }
+}
+
+/* @media only screen and (max-width: 1910px) {
+  body {
+    background-image: none !important;
+    background-color: black !important;
+  }
+
+  .show-message {
+    display: block;
+  }
+
+  .asset-image {
+    display: none;
+  }
+} */

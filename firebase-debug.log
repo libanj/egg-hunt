@@ -1,0 +1,45 @@
+[debug] [2022-01-12T13:36:20.726Z] ----------------------------------------------------------------------
+[debug] [2022-01-12T13:36:20.728Z] Command:       /home/libanj/.nvm/versions/node/v17.3.1/bin/node /mnt/c/Users/Liban Jama/AppData/Roaming/npm/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2022-01-12T13:36:20.729Z] CLI Version:   8.9.0
+[debug] [2022-01-12T13:36:20.729Z] Platform:      linux
+[debug] [2022-01-12T13:36:20.729Z] Node Version:  v17.3.1
+[debug] [2022-01-12T13:36:20.741Z] Time:          Wed Jan 12 2022 13:36:20 GMT+0000 (Greenwich Mean Time)
+[debug] [2022-01-12T13:36:20.741Z] ----------------------------------------------------------------------
+[debug] [2022-01-12T13:36:20.742Z] 
+[debug] [2022-01-12T13:36:20.876Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-12T13:36:20.877Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/libanj/projects/easter-popup
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-12T13:37:48.405Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-12T13:37:48.406Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-12T13:37:48.521Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 12 Jan 2022 13:37:48 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-12T13:37:48.530Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2022-01-12T13:38:18.554Z] Server Error. ETIMEDOUT
+[debug] [2022-01-12T13:38:18.622Z] FirebaseError: Server Error. ETIMEDOUT
+    at Request._callback (/mnt/c/Users/Liban Jama/AppData/Roaming/npm/node_modules/firebase-tools/lib/api.js:32:31)
+    at self.callback (/mnt/c/Users/Liban Jama/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (node:events:390:28)
+    at Request.emit (node:domain:475:12)
+    at Timeout.<anonymous> (/mnt/c/Users/Liban Jama/AppData/Roaming/npm/node_modules/firebase-tools/node_modules/request/request.js:851:16)
+    at listOnTimeout (node:internal/timers:568:17)
+    at processTimers (node:internal/timers:510:7)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
